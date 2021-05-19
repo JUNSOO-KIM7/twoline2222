@@ -23,7 +23,7 @@ public class OnelineDAO {  // Data Access Object
 	private Connection connect() {
 		Connection con = null;
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(url, user, passwd);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
